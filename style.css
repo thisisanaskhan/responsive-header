@@ -4,3 +4,33 @@ li{
 .hotline{
     margin: auto;
 }
+.herosection{
+    background-color: #117569 ; 
+    height: 100%;
+    width: 100%;
+    top: 10;
+    right: 0;
+    left: 0;
+    position:absolute;
+
+}
+.left-content{
+    margin-top: 225px;
+}
+.left-content span{
+    font-size: 15px;
+    font-weight: bold;
+    color:aliceblue;
+    margin-top: 225px;
+    
+
+}
+.left-content p{
+    font-size: 60px;
+    font-weight:bolder;
+    color:aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+
