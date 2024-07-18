@@ -1,3 +1,6 @@
+*{
+    border: 1px solid red;
+}
 li{
     list-style-type: none !important;
 }
@@ -87,4 +90,16 @@ li{
 .card3{
     transition:transform 1s;
 }
+
+.img{
+    width: 9%;
+    height: auto;
+    
+   
+}
+.shift
+{
+    padding-right: 350px;
+}
+
 
