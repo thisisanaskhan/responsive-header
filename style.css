@@ -1,6 +1,11 @@
 *{
-    border: 1px solid red;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
 }
+
 li{
     list-style-type: none !important;
 }
@@ -20,10 +25,6 @@ li{
     font-weight: bold;
     color:aliceblue;
     margin: 10px;
-
-    
-    
-
 }
 .left-content p{
     font-size: 60px;
@@ -33,6 +34,8 @@ li{
     margin: 10px;
     
 }
+
+
 .card-img-overlay span{
     font-size: 20px;
     font-weight:bolder;
@@ -56,6 +59,9 @@ li{
     text-align: center;
    
 
+}
+.card{
+    overflow: hidden;
 }
 .card-img-top{
     border-radius: 50%;
@@ -82,14 +88,9 @@ li{
 }
 .card-body:hover{
     background-color: blue;
-    color: white;
+    
 }
-.cards3:hover{
-    transform:scale(1.1);
-}
-.card3{
-    transition:transform 1s;
-}
+
 
 .img{
     width: 9%;
@@ -97,9 +98,6 @@ li{
     
    
 }
-.shift
-{
-    padding-right: 350px;
-}
+
 
 
