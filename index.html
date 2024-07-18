@@ -4,20 +4,35 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<!---------------------------------------------------POPULAR TOP BEST-------------------------------------------------------------------------------------->
+<style>
+  li a.nav-link.tab{
+    color: black !important;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  a.nav-link.tab.active {
+    border-bottom: 1px solid blue;
+    
+    color: blue;
+
+  }
+</style>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <body>
   <ul class="nav nav-pills">                                                                                                                                                                                                                    
 
@@ -56,19 +71,59 @@
   </ul>
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
       <a class="navbar-brand" href="#">
         <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo.svg" alt="logo"
           width="154" height="44.8" class="d-inline-block-align-text-top">
       </a>
+      
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <b>Products</b>
       </a>
-
-      <ul class="dropdown-menu" style="left: 18%;">
-        <li><a class="dropdown-item" href="#">School solutions</a></li>
-        <li><a class="dropdown-item" href="#">University solution</a></li>
-        <li><a class="dropdown-item" href="#">School solutions</a></li>
-      </ul>
+              
+    <li class="dropdown">
+       
+        <ul class="dropdown-menu multi-column columns-3" style="width: max-content;">
+          <div class="row">
+            <div class="col-sm-4">
+              <ul class="multi-column-dropdown">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="multi-column-dropdown">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="multi-column-dropdown">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </ul>
+    </li>
       <a class="nav-link active" aria-current="page" href="#"><b>Best deals</b></a>
       </li>
 
@@ -102,6 +157,7 @@
         </ul>
       </li>
       </ul>
+      
       <div class="icons">
         <i class="bi bi-search"></i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
           class="bi bi-search" viewBox="0 0 16 16">
@@ -120,12 +176,13 @@
         </svg>
       </div>
     </div>
+    
 
 
   </nav>
   <div class="herosection">
-    <div class="container-fluid" style="width: 103%;">
-      <div class="container" style="max-width:  100%;">
+    <div class="container-fluid" style="width: 100%;padding: 0%;">
+     <div class="container" style="max-width:  100%;padding: 0%;">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -282,9 +339,48 @@
     </div>
     
     <!-------CARDS1-->
-
     <div class="container mt-5">
-      <div class="row ">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card  text-white" style="border-radius: 22px; margin: 20px;">
+            <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Banner-1.png" class="card-img" style="height: 219px;">
+            <div class="card-img-overlay">
+              <h3 class="card-title" style="font-family:'Times New Roman', Times, serif;font-size :50px;">First Order</h3>
+              <p class="card-text" style="font-size: small;">ONLINE AND IN STORE</p>
+              <strong style="font-size:40px;">10%OFF</strong>
+              <p class="card-text" style="font-size: small;">Use Code:EDUMA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card  text-white" style="border-radius: 22px;margin: 20px;">
+            <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Banner-4.png" class="card-img" style="height: 219px;">
+            <div class="card-img-overlay">
+              <h3 class="card-title" style="font-family:'Times New Roman', Times, serif;font-size :50px;">First Order</h3>
+              <p class="card-text" style="font-size: small;">COME IN AND PICK</p>
+              <strong style="font-size:40px;">15%OFF</strong>
+              <p class="card-text" style="font-size: small;">Use Code:EDUMA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card text-white"  style="border-radius: 22px; margin: 20px;">
+            <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Banner-5.png" class="card-img" style="height: 219px;">
+            <div class="card-img-overlay">
+              <h3 class="card-title" style="font-family:'Times New Roman', Times, serif;font-size :50px;">First Order</h3>
+            <p class="card-text" style="font-size: small;">ONLINE AND IN STORE</p>
+            <strong style="font-size:40px;">20%OFF</strong>
+            <p class="card-text" style="font-size: small;"><b>Use Code:EDUMA</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+ 
+
+     <!-------<div class="row ">
         <div class="col-lg-4">
         <div class="card  text-white" >
           <img  src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Banner-1.png">
@@ -319,10 +415,10 @@
         </div>
       </div>
       </div>
-      </div>
-      </div>
+      ----->
       
-    </div>
+      
+    
 
  
  <!------ XXXXXXXXXXXX
@@ -362,17 +458,101 @@
 ---->
 
 <!--popular top rated -->
+<div class="container">
+  <ul class="nav justify-content-center">
+    <li class="nav-item tab">
+      <a class="nav-link tab active" aria-current="page" href="#" >POPULAR</a>
+    </li>
+    <li class="nav-item tab">
+      <a class="nav-link tab" href="#">BEST SELLER</a>
+    </li>
+    <li class="nav-item tab">
+      <a class="nav-link tab" href="#">TOP RATED</a>
+    </li>
+  </ul>
 
-<div class="container-fluid">
-<div class="h1"><a href="" style="padding: 2rem; text-decoration: none;color: black;">POPULAR</a>
-  <a href="" style="text-decoration: none;color: black;">BEST SELLER</a>
-  <a href="" style="padding: 2rem ;text-decoration: none;color: black;">TOP RATED</a>
 </div>
-    </div>
+
 
 
 <!--cardss2-->
-
+<div class="container mt-5">
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Fountain-Pen-And-Journals-Gift-Set.jpg" class="zoom" >
+      <div class="card-body2" style="text-align: center;">
+        
+        <a href="" style="text-decoration: none;color: black;"><br><p>safari fountain pen gift set<br>$35</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Colours-Pencils.jpg" class="zoom"  >
+      <div class="card-body2">
+       
+        <a href="" style="text-decoration: none;color: black;"><br><p>Colour Pencil<br>$68</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Van-Gogh-Collection-Cahier-Notebook-Set-Large.jpg"class="zoom">
+      <div class="card-body2" style="text-align: center;">
+        
+        <a href="" style="text-decoration: none;color: black;"><br><p>Van Gogh Notebook<br>$24</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/2024-Wall-Calendar-Greetings-From-Around-The-World.jpg"class="zoom" >
+      <div class="card-body2" style="text-align: center;">
+        
+        <a href="" style="text-decoration: none;color: black;"><br><p>2024 Wall Calender<br>$12</p></a> 
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Weekly-Undated-Planner-Set-B6-2.jpg"class="zoom">
+      <div class="card-body2" style="text-align: center;">
+      
+        <a href="" style="text-decoration: none;color: black;"><br><p>Weekly Undated Planner Set B6<br><s style="color: red;">$62</s>$58</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" >
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Handmade-Mini-Stone-Crayon-Set-Coloured.jpg"class="zoom" >
+      <div class="card-body2" style="text-align: center;">
+        
+        <a href="" style="text-decoration: none;color: black;"><br><p>Handmade Ministone<br>$48</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Pens-Journal-and-Refill-Bundle-3.jpg" class="zoom" >
+      <div class="card-body2" style="text-align: center;">
+        
+        <a href="" style="text-decoration: none;color: black;"><br><p>Pens Journal And Refill Bundle<br><s style="color: red;">$24</s>$19</p></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Desktop-Sharpener.jpg" class="zoom" >
+      <div class="card-body2" style="text-align: center;">
+        
+        <a href="" style="text-decoration: none;color: black;"><br><p>Desktop Sharpener<br>$124.00</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!----------------<div class="container">
 <div class="row" style="text-align: center;">
   <div class="col-lg-3">
     <div class="card " style="width: 18rem; border-radius: 40px;margin-left: 60px;margin-top: 20px; overflow: hidden;">
@@ -445,6 +625,8 @@
     </div>
  </div>
  </div>
+</div>
+----->
  <!-----------------------------------BUTTON-------------------->
 
  <div class="d-grid gap-2 col-2 mx-auto" style="margin-top: 50px;">
@@ -459,10 +641,84 @@
       <p style="margin-top: 90px;font-size: 20px;margin-left: 70px;">Deal of the weeks</p>
       <b style="font-size:35px;margin-left: 40px;">Back To School <br></b>
       <span style="font-size: 40px;margin-left: 30px;">SALE UPTO-----------<br></span>
-      <strong style="font-size: 150px;font-weight: 700;color:yellow;line-height: 165px;text-decoration: none;margin-left: 30px;">30%<br></strong>
+      <strong style="font-size: 100px;font-weight: 700;color:yellow;line-height: 165px;text-decoration: none;margin-left: 30px;">30%<br></strong>
       <span style="font-size: 40px;margin-left: 20px;">------------All Products</span>
       </div>
-      <div class="col-lg-4" style="color: white;">
+
+        <div class="col-lg-4">
+          <div class="card" >
+            <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Gold-4.jpg"class="zoom">
+            <div class="card-body3">
+              
+              <a href="" style="text-decoration: none;color: black;"><p style="text-align: center;">Notebook With Pen A6 Black/Gold<br style="text-align: center;">$26</p></a>
+              <div class="icons2" style="color:gold; display: flex;justify-content: center;">
+                <i class="bi bi-star-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <i class="bi bi-star-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                </div>
+                <p style="margin-top: 20px; text-align: center;">Hurry!Only <span style="color: red;">400</span> left in stock</p>
+            </div>
+              
+            </div>
+          </div>
+        
+        <div class="col-lg-4">
+          <div class="card" style="margin-bottom: ;">
+            <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Costway-48-Computer-Desk-Study-Workstation-Laptop-Table-Home-Office-5.jpg" class="zoom" >
+            <div class="card-body3">
+             
+              <a href="" style="text-decoration: none;color: black;"><p style="text-align: center;">
+                Computer Desk Study<br style="text-align: center;"><s>$379 </s><span style="color: red;">$299</span>  </p></a>
+                <div class="icons2" style="color:gold;display: flex;justify-content: center;">
+                  <i class="bi bi-star-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <i class="bi bi-star-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <i class="bi bi-star-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <i class="bi bi-star-half"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                  </svg>
+                  <i class="bi bi-star"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                  </svg>
+                  </div>
+                  <p style="margin-top: 20px; text-align: center;">Hurry!Only <span style="color: red;">250</span> left in stock</p>
+                
+                
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+
+
+     <!----- <div class="col-lg-4" style="color: white;">
         <div class="card" style="width: 22rem;height: auto; margin-left: 50px;overflow: hidden; ">
           <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Gold-4.jpg"class="zoom" alt="...">
           <div class="card-body3">
@@ -525,8 +781,8 @@
           </div>
         </div>
       </div>
-  </div>
-</div>
+      -------->
+ 
 
 
 <!------------------------------------------------------------------->
@@ -538,8 +794,46 @@
 
 
 <div class="container">
-  <div class="row mt-5" style="text-align: center">
+  <div class="row mt-5" style="text-align: center ;">
     <div class="col-lg-4">
+    <div class="card  mb-3" style="max-width: 25rem;">
+      <div class="card-body text-success">
+        <h5 class="card-title" style="color: black;font-size:25px;font-family: 'Times New Roman', Times, serif;">School Solutions</h5>
+        <p class="card-text" style="color: black;"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut feugiat mi. Nunc tincidunt, ante rutrum varius mollis.</p>
+        <a href="#" style="color: black;text-decoration: none;">READ MORE</a></p>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card  mb-3" style="max-width: 25rem;">
+        <div class="card-body text-success">
+          <h5 class="card-title" style="color: black;font-size:25px;font-family: 'Times New Roman', Times, serif;">Office Solutions</h5>
+          <p class="card-text" style="color: black;"> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut feugiat mi. Nunc tincidunt, ante rutrum varius mollis.</p>
+          <a href="#" style="color: black;text-decoration: none;">READ MORE</a></p>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-3" style="max-width: 25rem;">
+          <div class="card-body text-success">
+            <h5 class="card-title" style="color: black;font-size:25px;font-family: 'Times New Roman', Times, serif;">University Solutions</h5>
+            <p class="card-text" style="color: black;"><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut feugiat mi. Nunc tincidunt, ante rutrum varius mollis.</p>
+            <a href="#" style="color: black;text-decoration: none;">READ MORE</a></p>
+          </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+   <!------------<div class="col-lg-4">
       <div class="card" style="width: 25rem;height: auto;">
         <div class="card-body">
           <h5 class="card-title">School Solutions</h5>
@@ -566,44 +860,43 @@
           <a href="#" style="color: black;text-decoration: none;">READ MORE</a>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </div>---------->
+ 
 
 <!------------------->
 <div class="container mt-5">
-  <div class="row" style="margin-left: 50px;">
+  <div class="row" style="display:flex;justify-content: center;">
     <div class="col-lg-2" style="width: 10rem;">
       <div class="card  text-white">
-        <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/logo4.png" class="card3">
+        <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/logo4.png" >
 
     </div>
   </div>
-  <div class="col-lg-2" style="width: 10rem;margin-left: 35px;">
+  <div class="col-lg-2" style="width: 10rem;">
     <div class="card  text-white">
-      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo2.png" class="card3">
+      <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo2.png" >
 
   </div>
 </div>
-<div class="col-lg-2"style="width: 10rem;margin-left: 35px;">
+<div class="col-lg-2"style="width: 10rem;">
   <div class="card  text-white">
-    <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/logo5.png" class="card3">
+    <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/logo5.png" >
 
 </div>
 </div>
-<div class="col-lg-2"style="width: 10rem;margin-left: 35px;">
+<div class="col-lg-2"style="width: 10rem;">
   <div class="card  text-white">
-    <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo3.png" alt="...">
+    <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo3.png" >
 
 </div>
 </div>
-<div class="col-lg-2"style="width: 10rem;margin-left: 35px;">
+<div class="col-lg-2"style="width: 10rem;">
   <div class="card  text-white">
-    <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/logo1.png" alt="...">
+    <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/logo1.png">
 
 </div>
 </div>
-<div class="col-lg-2"style="width: 10rem;margin-left: 35px;">
+<div class="col-lg-2"style="width: 10rem;">
   <div class="card  text-white">
     <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo3.png" alt="...">
 
@@ -619,8 +912,43 @@
 
 
 <!-------------------------------------------------CARDS 4--------------------------------------------->
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" style="text-align: center;">
+      <div class="card">
+        <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Blog-7-1.png" class="zoom" >
+        <div class="card-body4">
+          
+          <a href="" style="text-decoration: none;color: black;"><span style="font-size: small;">18,JAN 2020<BR></span><p style="font-size: large;">The Best School Supplies For Remote Learning<br></p></a>
+            <a href="" style="text-decoration: none;">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="text-align: center;">
+      <div class="card">
+        <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Blog-17.png" class="zoom"  >
+        <div class="card-body4">
+         
+          <a href="" style="text-decoration: none;color: black;"><span style="font-size: small;">19,JAN 2020<BR></span><p style="font-size: large;">Necessary School Supplies For The New School Year<br></p></a>
+            <a href="" style="text-decoration: none;">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="text-align: center;">
+      <div class="card">
+        <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Blog-7.png" class="zoom">
+        <div class="card-body4">
+          
+          <a href="" style="text-decoration: none;color: black;"><span style="font-size: small;">20,JAN 2022<BR></span><p style="font-size: large;">How To Organize Your School Supplies<br></p></a>
+            <a href="" style="text-decoration: none;">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <div class="row mt-5">
+
+    <!-----------
     <div class="col-lg-4" style="text-align: center;">
       <div class="card " style="width: 28rem; border-radius: 40px;margin-left: 110px;margin-top: 20px; overflow: hidden;">
         <img  src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/10/Blog-7-1.png" class="zoom">
@@ -647,8 +975,8 @@
             <a href="" style="text-decoration: none;">READ MORE</a>
         </div>
       </div>
-    </div>
-  </div>
+    </div>---------->
+  
   <!-------------------------------------------BUTTON------------------------------------------------------------------------------------------->
 
   <div class="d-grid gap-2 col-2 mx-auto" style="margin-top: 50px;padding-left: 50p;">
@@ -660,10 +988,90 @@
   <h1 style="text-align: center;font-family:Georgia, 'Times New Roman', Times, serif;margin-top: 70px;">Our Clients Says</h1>
 
   <!-------------------------------------------------------CARDS 5--------------------------------------------------------->
-
+<div class="container">
     <div class="row mt-5">
       <div class="col-lg-6">
-        <div class="card" style="width: 40rem;height:auto;background-color:#CEB096;margin-left:100px; border-radius: 10px;">
+      <div class="card  mb-3" style="max-width: 40rem;background-color:#CEB096;border-radius: 20px;">
+        <div class="card-body-text-success">
+          <div class="icons2" style="color:gold;display: flex;justify-content: center;">
+            <i class="bi bi-star-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <i class="bi bi-star-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <i class="bi bi-star-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <i class="bi bi-star-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <i class="bi bi-star-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            </div>
+          <p class="card-text" style="font-size :25px;text-align: center;"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip consequat.</p>
+            <div class="row5" style="display:flex; justify-content:center ;">
+            <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/08/team-3.png" class="img">                     
+            <p><b>Jessica Alna</b><br>
+             Michigan Ave, Chicago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card mb-3" style="max-width: 40rem; background-color:#f3f7ff;border-radius: 20px">
+          <div class="card-body-text-success">
+            <div class="icons2" style="color:gold;display: flex;justify-content: center;">
+              <i class="bi bi-star-fill"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <i class="bi bi-star-fill"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <i class="bi bi-star-fill"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <i class="bi bi-star-fill"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <i class="bi bi-star-fill"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              </div>
+              <p class="card-text" style="font-size:25px;text-align: center;"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip consequat.</p>
+              <div class="row5" style="display: flex; justify-content: center;">
+               <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/08/team-12.png" class="img">
+               <p><b>Jessica Alna</b><br>
+                 Michigan Ave, Chicago</p>
+               </div>
+           
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-------<div class="col-lg-6">
+          <div class="card" style="width: 40rem;height:auto;background-color:#CEB096;margin-left:100px; border-radius: 10px;">
           <div class="icons2" style="color:gold;margin-left: 250px;">
             <i class="bi bi-star-fill"></i>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -730,7 +1138,8 @@
           </div>
         </div>
       </div> 
-      </div>
+      ---------->
+      
       
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -778,7 +1187,7 @@
 
 
 <div class="footer mt-5" style="background-color:#f3f7ff;">
-  <div class="row" style="text-align: center; margin-top: 50px;">
+  <div class="row" style="text-align: center;margin-top: 50px;--bs-gutter-x: 0px;">
     <div class="col-lg-4" style="margin-top: 50px;padding-right: 110px;">
       <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/09/Logo.svg" alt="logo"
           width="154" height="44.8" class="d-inline-block-align-text-top">
@@ -797,7 +1206,10 @@
   </div>
 
   <!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
-  <hr>
+  <div class="container">
+    <hr>
+  </div>
+
 
   <div class="footer-align" style="display: flex;justify-content:space-between;flex-direction: row;flex-wrap: wrap;">
   <div class="footer-body mt-5">
@@ -848,8 +1260,11 @@
       </ul>
   </div>
 </div>
-<hr>
+<div class="container">
+  <hr>
+</div>
 
+<div class="container">
 <div class="row" style="margin-left: 90px;">
   <div class="col-lg-6">
     <p>Copyright © 2024, Eduma Powered by ThimPress</p>
@@ -862,6 +1277,7 @@
     <img src="https://eduma.thimpress.com/demo-ecommerce/wp-content/uploads/sites/100/2023/11/visa.png"> </div>
     </div>
   </div>
+</div>
 </div>
 
    
