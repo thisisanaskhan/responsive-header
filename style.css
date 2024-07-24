@@ -23,6 +23,7 @@ li{
 
 .left-content{
     margin-top: 180px;
+  
     
 }
 .left-content span{
@@ -38,6 +39,9 @@ li{
     font-family:'Times New Roman', Times, serif;
     margin: 10px;
     
+}
+.card{
+    border: none;
 }
 
 
