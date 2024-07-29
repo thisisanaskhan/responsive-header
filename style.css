@@ -1,3 +1,4 @@
+
 *{
     padding: 0px;
     margin: 0px;
@@ -27,12 +28,18 @@ li{
     
 }
 .left-content span{
+    
     font-size: 15px;
     font-weight: bold;
     color:aliceblue;
     margin: 10px;
 }
 .left-content p{
+    @media screen and (max-width: 600px) {
+         
+          font-size: 40px;
+        
+      }
     font-size: 60px;
     font-weight:bolder;
     color:aliceblue;
@@ -99,11 +106,77 @@ li{
     background-color: blue;
     
 }
+.card-title{
+    color: white;
+}
 
 
 .img{
     width: 9%;
-    height: auto;
-    
-   
+    height: auto;  
 }
+.dow{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 30px;
+      
+    }
+
+    margin-top: 90px; 
+    font-size: 20px; 
+    margin-left: 60px;
+}
+.bts{
+    
+    @media screen and (max-width: 600px) {
+         
+        font-size: 25px;
+      
+    }
+    font-size:35px;
+     margin-left: 50px;
+}
+.sale{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 25px;
+      
+    }
+    font-size: 40px;
+    margin-left: 30px;
+}
+.threeO{
+    font-size: 100px;
+    font-weight: 700;
+    color:yellow;
+    line-height: 165px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.product
+{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 20px;
+      
+    }
+    font-size: 40px;
+    margin-left: 20px;
+}
+.card-text{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 15px;
+      
+    }
+    font-size :25px;
+    text-align: center;
+}
+.row5{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
