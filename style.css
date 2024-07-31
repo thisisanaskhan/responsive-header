@@ -47,6 +47,42 @@ li{
     margin: 10px;
     
 }
+.tab-container {
+    @media screen and (max-width: 600px) {
+         
+        font-size: 10px;
+      
+    }
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    /* border-bottom: 2px solid #ddd; Optional: adds a border below the tabs */
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    outline: none;
+}
+
+.tab:hover, .tab:focus, .tab:target {
+    color: #000;
+}
+
+.tab:focus::after, .tab:target::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
 .card{
     border: none;
 }
@@ -131,7 +167,7 @@ li{
     @media screen and (max-width: 600px) {
          
         font-size: 25px;
-      
+        justify-content: center;;
     }
     font-size:35px;
      margin-left: 50px;
@@ -142,7 +178,7 @@ li{
         font-size: 25px;
       
     }
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 30px;
 }
 .threeO{
@@ -180,3 +216,13 @@ li{
     }
 }
 
+.card-body2{
+    
+    background-color: aliceblue;
+}
+.card-body-o{
+    background-color:azure;
+}
+.icons-o{
+    padding-bottom: 88px;
+}
