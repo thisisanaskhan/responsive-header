@@ -155,8 +155,6 @@ li{
 }
 .card-img-top:hover{
     transform: scale(1.1);
-    
-    
 
 }
 .card-img-top{
@@ -303,6 +301,7 @@ li{
      font-size: 25px;
     
  }
+
 .card-body2{
     
     background-color: aliceblue;
