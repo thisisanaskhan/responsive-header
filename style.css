@@ -14,6 +14,29 @@ li{
     margin: auto;
 }
 
+        @media screen and (max-width: 380px) {
+            #nav {
+                display: none;
+            }
+    
+    
+    
+        }
+        @media screen and (max-width: 380px) {
+            #navv {
+                display: none;
+            }
+    
+    
+    
+        }
+.container-fluid{
+    width: 100%;
+    padding: 0%;
+
+}       
+
+
 .multi-column-dropdown li a{
     color: black;
     text-decoration: none;
@@ -24,7 +47,7 @@ li{
 
 .left-content{
     margin-top: 180px;
-  
+    
     
 }
 .left-content span{
@@ -38,9 +61,10 @@ li{
     @media screen and (max-width: 600px) {
          
           font-size: 40px;
+         
         
       }
-    font-size: 60px;
+    font-size: 50px;
     font-weight:bolder;
     color:aliceblue;
     font-family:'Times New Roman', Times, serif;
@@ -50,12 +74,13 @@ li{
 .tab-container {
     @media screen and (max-width: 600px) {
          
-        font-size: 10px;
+        font-size: 15px;
       
     }
     display: flex;
     justify-content: center;
     font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
     /* border-bottom: 2px solid #ddd; Optional: adds a border below the tabs */
 }
 
@@ -112,6 +137,15 @@ li{
    
 
 }
+.text-white
+{
+    border-radius: 22px;
+    margin: 20px;
+}
+.card-body2{
+    text-align: center;
+}
+
 .card{
     overflow: hidden;
 }
@@ -151,38 +185,80 @@ li{
     width: 9%;
     height: auto;  
 }
+#button:hover{
+    background-color: blue;
+    color: aliceblue;
+    
+
+}
+#button{
+    background-color: white; 
+     width: 170px;
+     color: blue;
+}
+.btn:hover {
+    background-color: yellow;
+    color: #000;
+
+}
+.btn{
+    background-color:blue;
+     color: white; width: 170px;
+}
+
+#rowc{
+    background-color: blue;
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    display: flex;
+}
+#con{
+    color: white; 
+    font-family:'Times New Roman', Times, serif;
+}
+.icons2{
+    color:gold;
+    display: flex;justify-content: center;
+    padding-bottom: 10px;
+}
+
 .dow{
     @media screen and (max-width: 600px) {
          
-        font-size: 30px;
+        font-size: 20px;
       
     }
 
     margin-top: 90px; 
-    font-size: 20px; 
+    font-size: 30px; 
     margin-left: 60px;
 }
 .bts{
     
     @media screen and (max-width: 600px) {
          
-        font-size: 25px;
-        justify-content: center;;
+        font-size: 26px;
+        justify-content: center;
+        padding-bottom: 10px;
     }
     font-size:35px;
      margin-left: 50px;
+     
 }
 .sale{
     @media screen and (max-width: 600px) {
          
-        font-size: 25px;
+        font-size: 20px;
       
     }
-    font-size: 20px;
+    font-size: 40px;
     margin-left: 30px;
 }
 .threeO{
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 700;
     color:yellow;
     line-height: 165px;
@@ -215,7 +291,18 @@ li{
         width: 100%;
     }
 }
-
+.card-body:hover{
+    color: white;
+     background-color: blue;
+      
+     
+ }
+ 
+ .card-title3{
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 25px;
+    
+ }
 .card-body2{
     
     background-color: aliceblue;
@@ -224,5 +311,83 @@ li{
     background-color:azure;
 }
 .icons-o{
-    padding-bottom: 88px;
+    padding-top: 10px;
+    padding-bottom: 63px;
+}
+.card-title-o
+{
+    padding-top: 15px;
+}
+.card-a{
+    width: 19rem;
+    height: 14rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: black;
+}
+.card-body-a{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.card-title-a
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-title{
+    padding-top: 15px;
+}
+.article{
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.card-title-aa{
+    font-size:large;
+}
+.card-body4{
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.card-a1{
+   
+    background-color:silver;
+    border-radius: 20px;
+
+}
+.card-body-a1{
+    text-align: center;
+    padding-top: 40px;
+}
+.dow-a{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 20px;
+       
+    }
+    font-size: xx-large;
+}
+.bts-a
+{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 20px;
+       
+    }
+    font-size: 30px;
+}
+.sale-a{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 20px;
+       
+    }
+    font-size: x-large;
+}
+.product-a{
+    @media screen and (max-width: 600px) {
+         
+        font-size: 20px;
+       
+    }
+    font-size: x-large;
 }
